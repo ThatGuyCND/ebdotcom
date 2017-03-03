@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /_legacy
+Disallow: /presentations
+Disallow: /theme
+Disallow: /styles.html
