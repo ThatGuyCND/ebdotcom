@@ -2823,7 +2823,7 @@ header .header-logo a {
   }
 }
 
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 1800px) and (max-width: 2599px) {
   #portfolio .bricks-wrapper .brick {
     width: 33.33333%;
   }
