@@ -2817,7 +2817,7 @@ header .header-logo a {
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- */
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2600px) {
   #portfolio .bricks-wrapper .brick {
     width: 25%;
   }
