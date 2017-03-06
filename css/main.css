@@ -2227,6 +2227,11 @@ header .header-logo a {
     text-align: center;
   }
 
+  .about-profile .intro .lead,
+  .about-services .intro .lead {
+    text-align: left;
+  }
+
   .about-profile {
     padding-bottom: 9rem;
   }
@@ -2254,7 +2259,7 @@ header .header-logo a {
     padding-right: 25px;
   }
 
-  .about-services {
+  .about-services .services {
     text-align: center;
   }
 
