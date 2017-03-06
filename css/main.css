@@ -2158,7 +2158,12 @@ header .header-logo a {
  * ------------------------------------------------------------------- */
 @media only screen and (min-width: 2600px) {
   .about-services ul.services {
-    width: 50%;
+    width: 47.5%;
+    float: left;
+  }
+
+  .about-services ul.services:last-child {
+    margin-left: 5%;
   }
 }
 
