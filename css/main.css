@@ -936,9 +936,11 @@ input::-moz-focus-inner {
   float: left;
   margin: 0;
   padding: 1.5rem .6rem 0 0;
-  font-size: 8.4rem;
+  /*font-size: 8.4rem;*/
+  font-size: 12rem;
   font-family: "montserrat-bold", sans-serif;
-  line-height: 6rem;
+  /*line-height: 6rem;*/
+  line-height: 8rem;
   text-indent: 0;
   background: transparent;
   color: #151515;
@@ -1234,6 +1236,8 @@ input::-moz-focus-inner {
   width: 100%;
 }
 
+
+
 @media only screen and (max-width:768px) {
   .skill-bars li .progress span {
     top: auto;
@@ -1325,12 +1329,39 @@ input::-moz-focus-inner {
 
 }
 
+.show-xxxlarge {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 2600px) {
+  .show-xxxlarge {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .row {
+    max-width: 90%;
+  }
+
+  .row.narrow {
+    max-width: 800px;
+  }
+}
+
 .wide {
   max-width: 1300px;
 }
 
 .narrow {
   max-width: 800px;
+}
+
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .js .animate-this,
@@ -1812,6 +1843,24 @@ header .header-logo a {
  * responsive:
  * home section
  * ------------------------------------------------------------------- */
+@media only screen and (min-width: 2000px) {
+  .home-bottom-text h3 {
+    font-size: 5.2rem;
+  }
+
+  .home-bottom-text h1 {
+    font-size: 8.2rem;
+  }
+
+  .home-section-links li {
+    font-size: 3.4rem;
+  }
+
+  .home-section-links li a {
+    font-size: 4rem;
+  }
+}
+
 @media only screen and (max-width:1200px) {
   .home-content-tablecell h3 {
     font-size: 2.1rem;
@@ -2106,6 +2155,28 @@ header .header-logo a {
  * responsive:
  * about
  * ------------------------------------------------------------------- */
+@media only screen and (min-width: 2600px) {
+  .about-services .services {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .about-profile__content {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .about-wrap {
+    max-width: 90%;
+  }
+}
+
 @media only screen and (max-width:1024px) {
   .about-profile {
     padding-right: 5rem;
@@ -2296,6 +2367,12 @@ header .header-logo a {
  * responsive:
  * skills
  * ------------------------------------------------------------------- */
+@media only screen and (min-width: 1200px) {
+  .skill-bars {
+    max-width: 960px;
+  }
+}
+
 @media only screen and (max-width:1024px) {
   #skills [class="col-skills"] {
     width: 75%;
@@ -2389,6 +2466,7 @@ header .header-logo a {
   position: relative;
   padding-left: 8rem;
   margin-bottom: 4.2rem;
+  max-width: 960px;
 }
 
 #credentials .timeline-ico {
@@ -2877,6 +2955,10 @@ header .header-logo a {
   color: rgba(255, 255, 255, 1);
 }
 
+.endorsement {
+  max-width: 960px;
+}
+
 /* ===================================================================
  *  15. contact - (_layout.scss)
  *
@@ -3126,6 +3208,12 @@ header .header-logo a {
 
 .contact-info h5 {
   color: #FFFFFF;
+}
+
+@media only screen and (min-width: 1200px) {
+  .contact-form {
+    max-width: 800px;
+  }
 }
 
 @media only screen and (max-width:768px) {
