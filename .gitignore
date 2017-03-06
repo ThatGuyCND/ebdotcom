@@ -193,3 +193,21 @@ composer.phar
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
 # composer.lock
+
+###################
+# Site specific directories that need to be ignored
+# so that they don't get stored in version control.
+###################
+
+# The legacy Flash site directory
+_legacy/
+
+# Apaxy directory listing theme, currently leveraged by the presentations directory
+theme/
+
+# Presentations directory
+# Each of these have their own corresponding version control repository.
+# Once a build process is setup for the entire directory structure, the
+# presentations directory will be dynamically generated with each repo
+# being tracked by other configuration.
+presentations/
