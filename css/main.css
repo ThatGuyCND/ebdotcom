@@ -2813,12 +2813,17 @@ header .header-logo a {
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- */
+@media only screen and (min-width: 1800px) {
+  #portfolio .bricks-wrapper .brick {
+    width: 33.33333%;
+  }
+}
+
 @media only screen and (max-width:600px) {
   #portfolio .bricks-wrapper .brick {
     float: none;
     width: 100%;
   }
-
 }
 
 
