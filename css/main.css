@@ -2102,6 +2102,7 @@ header .header-logo a {
 .about-services ul.services {
   list-style: none;
   margin-left: 0;
+  width: 100%;
 }
 
 .about-services ul.services li {
@@ -2156,10 +2157,8 @@ header .header-logo a {
  * about
  * ------------------------------------------------------------------- */
 @media only screen and (min-width: 2600px) {
-  .about-services .services {
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
-    column-count: 2;
+  .about-services ul.services {
+    width: 50%;
   }
 }
 
@@ -2813,6 +2812,12 @@ header .header-logo a {
  * responsive:
  * portfolio
  * ------------------------------------------------------------------- */
+@media only screen and (min-width: 1800px) {
+  #portfolio .bricks-wrapper .brick {
+    width: 25%;
+  }
+}
+
 @media only screen and (min-width: 1800px) {
   #portfolio .bricks-wrapper .brick {
     width: 33.33333%;
